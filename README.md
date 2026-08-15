@@ -1,39 +1,50 @@
-🧬 Projeto 01 — Genômica e Bioinformática
-Análise de sequências e caracterização molecular de proteínas
+# 🧬 Projeto 01 — Genômica e Bioinformática
+### Análise de sequências e caracterização molecular de proteínas
+
+> Pipeline introdutório desenvolvido em Python e Biopython para análise, caracterização e comparação de sequências gênicas e proteicas humanas.
 
 Projeto desenvolvido como parte da minha formação prática em Bioinformática, com foco na utilização de Python e Biopython para obtenção, processamento, análise, caracterização e visualização de dados moleculares.
 
 O projeto apresenta um pipeline computacional reprodutível aplicado a sequências de genes humanos, integrando conceitos de Biologia Molecular, Genética, Bioinformática, análise de sequências, análise de proteínas e programação em Python.
 
-🎯 Objetivo
+---
+
+## 🎯 Objetivo
 
 Desenvolver um pipeline introdutório de análise bioinformática capaz de:
 
-obter sequências de referência;
-trabalhar com arquivos FASTA e GenBank;
-identificar regiões codificantes (CDS);
-traduzir sequências nucleotídicas em proteínas;
-caracterizar propriedades físico-químicas de proteínas;
-organizar resultados em arquivos CSV;
-comparar sequências proteicas;
-realizar alinhamentos globais;
-calcular identidade e cobertura;
-gerar visualizações gráficas dos resultados.
+- obter sequências de referência;
+- trabalhar com arquivos FASTA e GenBank;
+- identificar regiões codificantes (CDS);
+- traduzir sequências nucleotídicas em proteínas;
+- caracterizar propriedades físico-químicas de proteínas;
+- organizar resultados em arquivos CSV;
+- comparar sequências proteicas;
+- realizar alinhamentos globais;
+- calcular identidade e cobertura;
+- gerar visualizações gráficas dos resultados.
 
-O projeto foi estruturado priorizando organização, rastreabilidade e reprodutibilidade computacional.
+O projeto foi estruturado priorizando **organização, rastreabilidade e reprodutibilidade computacional**.
 
-🧬 Genes analisados
+---
+
+## 🧬 Genes analisados
 
 Foram analisados três genes humanos:
 
-Gene	Proteína	Contexto biológico
-HBB	Hemoglobina beta	Transporte de oxigênio
-HBA1	Hemoglobina alfa 1	Transporte de oxigênio
-VHL	Proteína supressora tumoral von Hippel-Lindau	Regulação celular e resposta à hipóxia
-🔬 Pipeline de análise
+| Gene | Proteína | Contexto biológico |
+|---|---|---|
+| **HBB** | Hemoglobina beta | Transporte de oxigênio |
+| **HBA1** | Hemoglobina alfa 1 | Transporte de oxigênio |
+| **VHL** | Proteína supressora tumoral von Hippel-Lindau | Regulação celular e resposta à hipóxia |
+
+---
+
+## 🔬 Pipeline de análise
 
 O fluxo desenvolvido pode ser representado da seguinte forma:
 
+```text
 Sequências de referência
         ↓
 Arquivos FASTA / GenBank
@@ -55,7 +66,8 @@ Alinhamento global
 Identidade e cobertura
         ↓
 Visualização dos resultados
-📊 Caracterização molecular
+
+📊 Caracterização molecular:
 
 As proteínas foram analisadas utilizando recursos do Biopython.
 
@@ -74,31 +86,24 @@ Os resultados foram organizados em arquivos CSV para facilitar a comparação en
 O principal arquivo consolidado é:
 
 resultados/perfil_molecular_final.csv
-📈 Visualização dos resultados
+
+📈 Visualização dos resultados:
 
 A etapa final do pipeline utiliza Matplotlib para transformar os resultados tabulares em representações gráficas.
 
 Foram geradas quatro visualizações:
 
-### Comprimento das proteínas
+Comprimento das proteínas
 
-![Comprimento das proteínas](resultados/figuras/comprimento_proteinas.png)
+Peso molecular
 
-### Peso molecular
+Ponto isoelétrico
 
-![Peso molecular](resultados/figuras/peso_molecular.png)
+GRAVY
 
-### Ponto isoelétrico
+As figuras são exportadas em formato PNG para utilização na documentação, apresentação e análise dos resultados.
 
-![Ponto isoelétrico](resultados/figuras/ponto_isoeletrico.png)
-
-### GRAVY
-
-![GRAVY](resultados/figuras/gravy.png)
-
-As figuras são exportadas em PNG com resolução de 300 dpi, permitindo sua utilização em documentação, apresentações e relatórios científicos.
-
-🧪 Alinhamento e comparação de proteínas
+🧪 Alinhamento e comparação de proteínas:
 
 Foi utilizado o PairwiseAligner, disponível no Biopython, para realizar alinhamentos globais entre:
 
@@ -115,6 +120,7 @@ A cobertura foi calculada separadamente para cada sequência:
 
 cobertura =
 posições alinhadas / comprimento da sequência × 100
+
 Resultados
 Comparação	Identidade	Cobertura 1	Cobertura 2
 HBB × HBA1	53,03%	89,80%	92,96%
@@ -123,7 +129,25 @@ HBA1 × VHL	47,50%	84,51%	56,34%
 
 Observação: os valores representam os resultados obtidos sob os parâmetros definidos no projeto. A identidade obtida por alinhamento global não deve ser interpretada isoladamente como evidência de homologia evolutiva.
 
-🗂️ Estrutura do projeto
+🧠 Competências demonstradas:
+
+Este projeto permitiu desenvolver e aplicar competências relacionadas a:
+
+1. manipulação de sequências biológicas;
+2. leitura e processamento de arquivos FASTA e GenBank;
+3. identificação de regiões codificantes (CDS);
+4. tradução de sequências nucleotídicas em proteínas;
+5. caracterização físico-química de proteínas;
+6. organização e análise de dados em CSV;
+7. alinhamento global de sequências proteicas;
+8. cálculo de identidade e cobertura;
+9. visualização de dados moleculares com Matplotlib;
+10. desenvolvimento de scripts em Python;
+11. organização de pipelines computacionais;
+12. reprodutibilidade e versionamento com Git e GitHub.
+
+🗂️ Estrutura do projeto:
+
 projeto_01_genomica_bioinformatica/
 │
 ├── data/
@@ -164,7 +188,8 @@ projeto_01_genomica_bioinformatica/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-💻 Tecnologias utilizadas
+
+💻 Tecnologias utilizadas:
 Python 3.13
 Biopython 1.88
 NumPy 2.5.1
@@ -174,17 +199,25 @@ PairwiseAligner
 PowerShell
 Git
 GitHub
-⚙️ Como reproduzir o projeto
+
+⚙️ Como reproduzir o projeto:
+
 1. Clonar o repositório
 git clone https://github.com/marciaoliveira-bio/projeto-01-genomica-bioinformatica.git
+
 2. Entrar na pasta
 cd projeto-01-genomica-bioinformatica
+
 3. Criar o ambiente virtual
 python -m venv .venv
+
 4. Ativar o ambiente virtual
+No Windows PowerShell:
 .\.venv\Scripts\Activate.ps1
+
 5. Instalar as dependências
 pip install -r requirements.txt
+
 6. Executar as análises
 
 Os scripts estão organizados sequencialmente na pasta scripts/.
@@ -202,6 +235,7 @@ Saída esperada:
 Visualizações refinadas com sucesso.
 Arquivos salvos em:
 resultados\figuras
+
 🔁 Reprodutibilidade
 
 O projeto foi organizado de forma a separar:
@@ -218,25 +252,24 @@ Visualização
 
 Essa organização facilita a rastreabilidade dos dados, a reprodução das análises e a expansão futura do pipeline.
 
-🚀 Próximos passos
+🚀 Próximos passos:
 
 Este projeto representa uma primeira etapa prática na construção de um portfólio em Bioinformática e Genômica.
 
 Possíveis extensões incluem:
 
-análise de novas sequências;
-utilização de bancos de dados biológicos;
-automação de consultas;
-análise de variantes;
-alinhamentos múltiplos;
-análise de expressão gênica;
-introdução a dados de NGS;
-desenvolvimento de pipelines mais complexos;
-integração com ferramentas de bioinformática de linha de comando.
-👩‍🔬 Autora
+a) análise de novas sequências;
+b) utilização de bancos de dados biológicos;
+c) automação de consultas;
+d) análise de variantes;
+e) alinhamentos múltiplos;
+f) análise de expressão gênica;
+g) introdução a dados de NGS;
+h) desenvolvimento de pipelines mais complexos;
+i) integração com ferramentas de bioinformática de linha de comando.
 
+👩‍🔬 Autora:
 Márcia Oliveira
+Biomedicina | Genética e Biologia Molecular | Bioinformática
 
-Estudante de Biomedicina | Genética e Biologia Molecular | Bioinformática
-
-Projeto desenvolvido para construção de portfólio prático e desenvolvimento de competências em análise computacional aplicada às Ciências Biomédicas.
+Projeto desenvolvido como parte da construção de um portfólio prático e do desenvolvimento de competências em análise computacional aplicada às Ciências Biomédicas.
