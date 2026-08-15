@@ -1,23 +1,85 @@
 # Projeto 01 — Análise Genômica e Bioinformática
 
-Projeto educacional desenvolvido para aplicar conceitos de Biologia Molecular, Genética e Bioinformática na análise de sequências gênicas e proteicas humanas.
+**Pipeline introdutório para análise de sequências gênicas e proteicas humanas utilizando Python e Biopython.**
 
-O projeto foi desenvolvido progressivamente utilizando Python e Biopython, com foco na construção de um fluxo reprodutível para obtenção, análise, organização e comparação de sequências biológicas.
+Projeto desenvolvido para aplicar, de forma prática e reprodutível, conceitos de **Biologia Molecular, Genética, análise de sequências e Bioinformática**.
 
-## Objetivo
+O projeto acompanha um fluxo completo de análise, desde a obtenção de sequências de referência até a caracterização molecular, organização dos resultados e comparação entre proteínas.
 
-Desenvolver um pipeline introdutório de análise molecular utilizando os genes:
+---
 
-- **HBB** — hemoglobin subunit beta
-- **HBA1** — hemoglobin subunit alpha 1
-- **VHL** — von Hippel-Lindau tumor suppressor
+## 🧬 Visão geral
 
-O projeto inclui etapas de obtenção de sequências, identificação de CDS, tradução para sequência proteica, análise físico-química, rastreamento de características funcionais, organização dos resultados em tabelas e validação por alinhamento proteico.
+Neste projeto foram analisados três genes humanos:
 
-## Estrutura do projeto
+| Gene     | Proteína                                      | Contexto biológico                     |
+| -------- | --------------------------------------------- | -------------------------------------- |
+| **HBB**  | Hemoglobina beta                              | Transporte de oxigênio                 |
+| **HBA1** | Hemoglobina alfa 1                            | Transporte de oxigênio                 |
+| **VHL**  | Proteína supressora tumoral von Hippel-Lindau | Regulação celular e resposta à hipóxia |
+
+O objetivo foi construir um **pipeline computacional reprodutível** capaz de:
+
+* obter sequências de referência;
+* identificar regiões codificantes (CDS);
+* traduzir sequências nucleotídicas em proteínas;
+* caracterizar propriedades físico-químicas;
+* identificar características funcionais;
+* organizar resultados em arquivos tabulares;
+* realizar comparações entre proteínas;
+* calcular identidade e cobertura de alinhamentos.
+
+---
+
+## 🎯 Objetivo
+
+Desenvolver e documentar um fluxo introdutório de análise bioinformática utilizando **Python e Biopython**, integrando conhecimentos de:
+
+* Biologia Molecular;
+* Genética;
+* Bioinformática;
+* análise de sequências;
+* análise de proteínas;
+* programação em Python;
+* organização e interpretação de dados biológicos.
+
+O projeto também foi desenvolvido com foco em **reprodutibilidade computacional**, permitindo que as diferentes etapas sejam executadas novamente a partir dos scripts disponibilizados.
+
+---
+
+## 🔬 Pipeline de análise
+
+O fluxo desenvolvido pode ser resumido da seguinte forma:
+
+```text
+Sequências de referência
+        ↓
+Arquivos FASTA / GenBank
+        ↓
+Identificação da CDS
+        ↓
+Tradução DNA → proteína
+        ↓
+Caracterização molecular
+        ↓
+Análise de características funcionais
+        ↓
+Organização dos resultados
+        ↓
+Comparação entre proteínas
+        ↓
+Alinhamento global
+        ↓
+Identidade e cobertura
+```
+
+---
+
+## 📂 Estrutura do projeto
 
 ```text
 projeto_01_genomica_bioinformatica/
+│
 ├── data/
 │   ├── HBB_NM_000518.5.fasta
 │   ├── HBB_NM_000518.5.gb
@@ -28,6 +90,10 @@ projeto_01_genomica_bioinformatica/
 │
 ├── evidencias/
 │   └── BLASTp_HBB.txt
+│
+├── resultados/
+│   ├── perfil_molecular.csv
+│   └── perfil_molecular_final.csv
 │
 ├── scripts/
 │   ├── 01_buscar_hbb.py
@@ -40,110 +106,234 @@ projeto_01_genomica_bioinformatica/
 │   ├── 08_atualizar_csv.py
 │   └── 09_validar_homologia.py
 │
-├── resultados/
-│   ├── perfil_molecular.csv
-│   └── perfil_molecular_final.csv
-│
 ├── validacao/
 │   └── validacao_final.txt
 │
+├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
-Etapas da análise
-1. Obtenção das sequências
+---
 
-Os scripts iniciais realizam a obtenção das sequências de referência dos genes selecionados e armazenam os arquivos em formatos FASTA e GenBank.
+## 🧪 Etapas da análise
 
-2. Análise das sequências
+### 1. Obtenção das sequências
 
-O projeto identifica a região codificante (CDS), determina seu comprimento e realiza a tradução para a sequência proteica correspondente.
+As sequências de referência dos genes selecionados foram obtidas e armazenadas nos formatos **FASTA** e **GenBank**.
 
-3. Análise físico-química
+Os arquivos GenBank também foram utilizados para acessar informações de anotação, incluindo regiões codificantes.
 
-As proteínas são analisadas quanto a:
+### 2. Identificação da CDS e tradução
 
-comprimento;
-peso molecular;
-ponto isoelétrico (pI);
-aromaticidade;
-índice de instabilidade;
-GRAVY;
-composição de aminoácidos.
-4. Características funcionais
+As regiões codificantes (**CDS — Coding DNA Sequence**) foram identificadas e utilizadas para gerar as respectivas sequências proteicas.
 
-São avaliadas características relacionadas às proteínas analisadas.
+O fluxo fundamental foi:
 
-Para HBB e HBA1, o projeto registra a compatibilidade com proteínas da família das globinas.
+```text
+DNA
+ ↓
+CDS
+ ↓
+RNA mensageiro
+ ↓
+Proteína
+```
 
-Para VHL, é registrado o motivo funcional utilizado na análise:
+### 3. Caracterização físico-química
 
+As proteínas foram caracterizadas utilizando recursos do Biopython.
+
+Foram analisados:
+
+* comprimento da proteína;
+* peso molecular;
+* ponto isoelétrico (pI);
+* aromaticidade;
+* índice de instabilidade;
+* GRAVY;
+* composição de aminoácidos.
+
+Os resultados foram organizados em arquivos CSV para facilitar a análise e comparação.
+
+### 4. Características funcionais
+
+Foram investigadas características relacionadas às proteínas analisadas.
+
+Para **HBB** e **HBA1**, foram registradas características compatíveis com proteínas da família das globinas.
+
+Para **VHL**, foi registrado o motivo funcional utilizado na análise:
+
+```text
 TLKERCLQVV
-5. Organização dos resultados
+```
 
-Os resultados são organizados em arquivos CSV para facilitar a inspeção e posterior análise.
+### 5. Organização dos resultados
 
-O arquivo perfil_molecular_final.csv reúne informações moleculares e anotações funcionais dos genes analisados.
+Os resultados foram estruturados em arquivos CSV.
 
-6. Validação por alinhamento proteico
+O arquivo:
 
-O script 09_validar_homologia.py realiza comparações entre:
+```text
+resultados/perfil_molecular_final.csv
+```
 
+reúne informações moleculares e anotações funcionais obtidas durante o pipeline.
+
+### 6. Validação por alinhamento
+
+Foi utilizado o `PairwiseAligner`, disponível no Biopython, para realizar alinhamentos globais entre:
+
+```text
 HBB × HBA1
 HBB × VHL
 HBA1 × VHL
+```
 
-As comparações são realizadas utilizando alinhamento global com PairwiseAligner, do Biopython.
+A identidade foi calculada como:
 
-A identidade é calculada como:
+```text
+identidade =
+posições idênticas / posições alinhadas × 100
+```
 
-identidade = posições idênticas / posições alinhadas × 100
+A cobertura foi calculada separadamente para cada sequência:
 
-A cobertura é calculada separadamente para cada sequência:
+```text
+cobertura =
+posições alinhadas / comprimento da sequência × 100
+```
 
-cobertura = posições alinhadas / comprimento da sequência × 100
-Parâmetros utilizados
-Tipo de alinhamento: global
-Match score: 2
-Mismatch score: -1
-Gap opening: -2
-Gap extension: -0.5
+---
 
-Os resultados da validação são armazenados em:
+## 📊 Resultados principais
 
-validacao/validacao_final.txt
-Resultados atuais
-Comparação    Identidade    Cobertura 1    Cobertura 2
-HBB × HBA1    53.03%    89.80%    92.96%
-HBB × VHL    52.63%    77.55%    53.52%
-HBA1 × VHL    47.50%    84.51%    56.34%
+Os alinhamentos foram realizados utilizando os seguintes parâmetros:
 
-Esses valores representam os resultados obtidos sob os parâmetros definidos no projeto e não devem ser interpretados isoladamente como evidência de homologia evolutiva.
+| Parâmetro           |  Valor |
+| ------------------- | -----: |
+| Tipo de alinhamento | Global |
+| Match score         |      2 |
+| Mismatch score      |     -1 |
+| Gap opening         |     -2 |
+| Gap extension       |   -0.5 |
 
-Tecnologias utilizadas
-Python 3.13
-Biopython 1.88
-CSV
-PairwiseAligner
-PowerShell
-Git/GitHub
-Objetivo de aprendizagem
+Resultados obtidos:
 
-Este projeto faz parte da construção progressiva de competências em:
+| Comparação | Identidade | Cobertura 1 | Cobertura 2 |
+| ---------- | ---------: | ----------: | ----------: |
+| HBB × HBA1 |     53,03% |      89,80% |      92,96% |
+| HBB × VHL  |     52,63% |      77,55% |      53,52% |
+| HBA1 × VHL |     47,50% |      84,51% |      56,34% |
 
-Biologia Molecular;
-Genética;
-análise de sequências;
-programação em Python;
-bioinformática;
-análise de proteínas;
-organização de dados biológicos;
-reprodutibilidade computacional.
+**Importante:** esses valores representam os resultados obtidos sob os parâmetros definidos no projeto. Identidade de sequência obtida por alinhamento global não deve ser interpretada isoladamente como evidência de homologia evolutiva.
 
-O projeto será expandido posteriormente com novas análises e ferramentas de bioinformática.
+---
 
-Observação
+## 💻 Tecnologias utilizadas
 
-Este é um projeto educacional desenvolvido para documentar o processo de aprendizagem e aplicação prática de conceitos de bioinformática.
+* **Python 3.13**
+* **Biopython 1.88**
+* **CSV**
+* **PairwiseAligner**
+* **PowerShell**
+* **Git**
+* **GitHub**
 
-As análises e interpretações devem ser consideradas dentro dos parâmetros e limitações metodológicas descritos neste repositório.
+---
+
+## 📁 Reprodutibilidade
+
+O projeto foi estruturado para permitir a reprodução das etapas de análise por meio dos scripts disponíveis na pasta:
+
+```text
+scripts/
+```
+
+A organização separa:
+
+* dados de entrada;
+* scripts de análise;
+* resultados;
+* evidências;
+* validações.
+
+Essa estrutura facilita a rastreabilidade entre **dados → processamento → resultados**.
+
+---
+
+## 🧠 Competências demonstradas
+
+Este projeto representa o desenvolvimento prático das seguintes competências:
+
+**Biologia Molecular**
+
+* estrutura e análise de sequências;
+* CDS;
+* tradução de sequências;
+* proteínas.
+
+**Bioinformática**
+
+* manipulação de sequências biológicas;
+* análise de proteínas;
+* alinhamento de sequências;
+* identidade e cobertura.
+
+**Programação**
+
+* Python;
+* Biopython;
+* manipulação de arquivos;
+* estruturas de dados;
+* geração e leitura de CSV.
+
+**Organização científica**
+
+* documentação de pipeline;
+* organização de dados;
+* registro de resultados;
+* reprodutibilidade computacional;
+* interpretação crítica dos resultados.
+
+---
+
+## ⚠️ Limitações
+
+Este projeto possui caráter **educacional e introdutório**.
+
+Os resultados devem ser interpretados considerando:
+
+* os parâmetros utilizados;
+* as características das sequências selecionadas;
+* as limitações dos métodos empregados;
+* a necessidade de ferramentas complementares para conclusões biológicas mais robustas.
+
+Em particular, os resultados de alinhamento não devem ser utilizados isoladamente para inferir relações evolutivas ou funcionais.
+
+---
+
+## 🚀 Próximos passos
+
+O pipeline será expandido progressivamente para incorporar novas ferramentas e análises de Bioinformática, incluindo:
+
+* análises de similaridade de sequências;
+* BLAST;
+* análise de variantes;
+* anotação funcional;
+* análises envolvendo NGS;
+* visualização de dados biológicos;
+* automação de pipelines;
+* integração de diferentes bancos de dados biológicos.
+
+---
+
+## 👩‍🔬 Sobre o projeto
+
+Este repositório faz parte da construção progressiva de competências em **Genética, Biologia Molecular, Bioinformática e programação aplicada às Ciências da Saúde**.
+
+O objetivo é documentar não apenas os resultados finais, mas também a evolução das habilidades técnicas e científicas desenvolvidas ao longo dos projetos.
+
+**Projeto 01 — Análise Genômica e Bioinformática**
+
+**Márcia Oliveira**
