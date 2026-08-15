@@ -32,7 +32,7 @@ O projeto foi estruturado priorizando **organização, rastreabilidade e reprodu
 
 Foram analisados três genes humanos:
 
-| Gene | Proteína | Contexto biológico |
+| **Gene** | **Proteína** | **Contexto biológico** |
 |---|---|---|
 | **HBB** | Hemoglobina beta | Transporte de oxigênio |
 | **HBA1** | Hemoglobina alfa 1 | Transporte de oxigênio |
@@ -66,8 +66,9 @@ Alinhamento global
 Identidade e cobertura
         ↓
 Visualização dos resultados
+```
 
-📊 Caracterização molecular:
+## 📊 Caracterização molecular:
 
 As proteínas foram analisadas utilizando recursos do Biopython.
 
@@ -87,7 +88,7 @@ O principal arquivo consolidado é:
 
 resultados/perfil_molecular_final.csv
 
-📈 Visualização dos resultados:
+## 📈 Visualização dos resultados:
 
 A etapa final do pipeline utiliza Matplotlib para transformar os resultados tabulares em representações gráficas.
 
@@ -103,7 +104,7 @@ GRAVY
 
 As figuras são exportadas em formato PNG para utilização na documentação, apresentação e análise dos resultados.
 
-🧪 Alinhamento e comparação de proteínas:
+## 🧪 Alinhamento e comparação de proteínas:
 
 Foi utilizado o PairwiseAligner, disponível no Biopython, para realizar alinhamentos globais entre:
 
@@ -129,8 +130,7 @@ HBA1 × VHL	47,50%	84,51%	56,34%
 
 Observação: os valores representam os resultados obtidos sob os parâmetros definidos no projeto. A identidade obtida por alinhamento global não deve ser interpretada isoladamente como evidência de homologia evolutiva.
 
-🧠 Competências demonstradas:
-
+## 🧠 Competências demonstradas:
 Este projeto permitiu desenvolver e aplicar competências relacionadas a:
 
 1. manipulação de sequências biológicas;
@@ -146,7 +146,7 @@ Este projeto permitiu desenvolver e aplicar competências relacionadas a:
 11. organização de pipelines computacionais;
 12. reprodutibilidade e versionamento com Git e GitHub.
 
-🗂️ Estrutura do projeto:
+## 🗂️ Estrutura do projeto:
 
 projeto_01_genomica_bioinformatica/
 │
@@ -189,7 +189,7 @@ projeto_01_genomica_bioinformatica/
 ├── README.md
 └── requirements.txt
 
-💻 Tecnologias utilizadas:
+## 💻 Tecnologias utilizadas:
 Python 3.13
 Biopython 1.88
 NumPy 2.5.1
@@ -200,7 +200,7 @@ PowerShell
 Git
 GitHub
 
-⚙️ Como reproduzir o projeto:
+## ⚙️ Como reproduzir o projeto:
 
 1. Clonar o repositório
 git clone https://github.com/marciaoliveira-bio/projeto-01-genomica-bioinformatica.git
@@ -236,7 +236,7 @@ Visualizações refinadas com sucesso.
 Arquivos salvos em:
 resultados\figuras
 
-🔁 Reprodutibilidade
+## 🔁 Reprodutibilidade:
 
 O projeto foi organizado de forma a separar:
 
@@ -252,7 +252,7 @@ Visualização
 
 Essa organização facilita a rastreabilidade dos dados, a reprodução das análises e a expansão futura do pipeline.
 
-🚀 Próximos passos:
+## 🚀 Próximos passos:
 
 Este projeto representa uma primeira etapa prática na construção de um portfólio em Bioinformática e Genômica.
 
@@ -268,7 +268,7 @@ g) introdução a dados de NGS;
 h) desenvolvimento de pipelines mais complexos;
 i) integração com ferramentas de bioinformática de linha de comando.
 
-👩‍🔬 Autora:
+## 👩‍🔬 Autora:
 Márcia Oliveira
 Biomedicina | Genética e Biologia Molecular | Bioinformática
 
