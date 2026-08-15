@@ -242,6 +242,64 @@ Resultados obtidos:
 
 ---
 
+## ▶️ Como reproduzir o projeto
+
+Para reproduzir as análises localmente, é necessário ter **Python 3.13** instalado.
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/marciaoliveira-bio/projeto-01-genomica-bioinformatica.git
+```
+
+### 2. Entrar na pasta do projeto
+
+```bash
+cd projeto-01-genomica-bioinformatica
+```
+
+### 3. Criar um ambiente virtual
+
+No Windows PowerShell:
+
+```powershell
+python -m venv .venv
+```
+
+### 4. Ativar o ambiente virtual
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### 5. Instalar as dependências
+
+```powershell
+pip install -r requirements.txt
+```
+
+### 6. Executar os scripts
+
+Os scripts estão organizados na pasta `scripts/` e seguem uma sequência de análise:
+
+```text
+01_buscar_hbb.py
+02_analisar_hbb.py
+03_buscar_alvos.py
+04_analisar_alvos.py
+05_rastrear_proteinas.py
+06_gerar_csv.py
+07_motivos_funcionais.py
+08_atualizar_csv.py
+09_validar_homologia.py
+```
+
+Exemplo:
+
+```powershell
+python scripts/01_buscar_hbb.py
+
+
 ## 📁 Reprodutibilidade
 
 O projeto foi estruturado para permitir a reprodução das etapas de análise por meio dos scripts disponíveis na pasta:
