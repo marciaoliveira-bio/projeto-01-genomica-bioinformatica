@@ -1,0 +1,60 @@
+======================================================================
+VALIDAÇÃO POR ALINHAMENTO PROTEICO
+======================================================================
+
+METODOLOGIA
+----------------------------------------------------------------------
+Alinhamento: global
+Algoritmo: PairwiseAligner (Biopython)
+Match score: 2
+Mismatch score: -1
+Gap opening: -2
+Gap extension: -0.5
+Identidade: posições idênticas / posições alinhadas × 100
+Cobertura: posições alinhadas / comprimento da sequência × 100
+
+HBB: 147 aa
+
+HBA1: 142 aa
+
+VHL: 213 aa
+
+----------------------------------------------------------------------
+HBB × HBA1
+----------------------------------------------------------------------
+Tamanho HBB: 147 aa
+Tamanho HBA1: 142 aa
+Posições idênticas: 70
+Posições alinhadas: 132
+Identidade: 53.03%
+Cobertura HBB: 89.80%
+Cobertura HBA1: 92.96%
+Interpretação: comparação realizada por alinhamento global de sequências proteicas.
+
+----------------------------------------------------------------------
+HBB × VHL
+----------------------------------------------------------------------
+Tamanho HBB: 147 aa
+Tamanho VHL: 213 aa
+Posições idênticas: 60
+Posições alinhadas: 114
+Identidade: 52.63%
+Cobertura HBB: 77.55%
+Cobertura VHL: 53.52%
+Interpretação: comparação realizada por alinhamento global de sequências proteicas.
+
+----------------------------------------------------------------------
+HBA1 × VHL
+----------------------------------------------------------------------
+Tamanho HBA1: 142 aa
+Tamanho VHL: 213 aa
+Posições idênticas: 57
+Posições alinhadas: 120
+Identidade: 47.50%
+Cobertura HBA1: 84.51%
+Cobertura VHL: 56.34%
+Interpretação: comparação realizada por alinhamento global de sequências proteicas.
+
+======================================================================
+VALIDAÇÃO CONCLUÍDA
+======================================================================

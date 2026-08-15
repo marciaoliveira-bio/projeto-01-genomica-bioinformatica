@@ -1,0 +1,290 @@
+LOCUS       NM_000551               4560 bp    mRNA    linear   PRI 26-NOV-2019
+DEFINITION  Homo sapiens von Hippel-Lindau tumor suppressor (VHL), transcript
+            variant 1, mRNA.
+ACCESSION   NM_000551
+VERSION     NM_000551.3
+KEYWORDS    RefSeq; RefSeq Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 4560)
+  AUTHORS   Li ZC, Zhai G, Zhang J, Wang Z, Liu G, Wu GY, Liang D and Zheng H.
+  TITLE     Differentiation of clear cell and non-clear cell renal cell
+            carcinomas by all-relevant radiomics features from multiphase CT: a
+            VHL mutation perspective
+  JOURNAL   Eur Radiol 29 (8), 3996-4007 (2019)
+   PUBMED   30523454
+  REMARK    GeneRIF: Most RCC-subtype-discriminative CT features were associated
+            with the key RCC-driven gene-the VHL gene mutation.
+REFERENCE   2  (bases 1 to 4560)
+  AUTHORS   Chen G, Zhou J, Chen J, Zhu J, Liu SC, Ding XF and Zhang Q.
+  TITLE     VHL regulates NEK1 via both HIF-2alpha pathway and
+            ubiquitin-proteasome pathway in renal cancer cell
+  JOURNAL   Biochem. Biophys. Res. Commun. 509 (3), 797-802 (2019)
+   PUBMED   30635121
+  REMARK    GeneRIF: These findings showed that VHL regulates NEK1 via both
+            HIF-2alpha pathway and ubiquitin-proteasome pathway in renal cancer
+            cells.
+REFERENCE   3  (bases 1 to 4560)
+  AUTHORS   Liu J, Wang Y, Wang S, Si H and Duan W.
+  TITLE     [Mutation analysis for a family affected with von Hippel-Lindau
+            syndrome]
+  JOURNAL   Zhonghua Yi Xue Yi Chuan Xue Za Zhi 35 (6), 860-863 (2018)
+   PUBMED   30512164
+  REMARK    GeneRIF: A novel mutation was found in exon 2 of the VHL gene; the
+            alpha-structure of pVHL is completely absent. The novel
+            c.426delT(p.V142fs) mutation probably underlies von Hippel-Lindau
+            syndrome in this pedigree.
+REFERENCE   4  (bases 1 to 4560)
+  AUTHORS   Trotta AM, Santagata S, Zanotta S, D'Alterio C, Napolitano M, Rea G,
+            Camerlingo R, Esposito F, Lamantia E, Anniciello A, Botti G, Longo
+            N, Botti G, Pignata S, Perdona S and Scala S.
+  TITLE     Mutated Von Hippel-Lindau-renal cell carcinoma (RCC) promotes
+            patients specific natural killer (NK) cytotoxicity
+  JOURNAL   J. Exp. Clin. Cancer Res. 37 (1), 297 (2018)
+   PUBMED   30514329
+  REMARK    GeneRIF: VHL tumoral mutations improve NKs effectiveness in RCC
+            patients and need to be considered in the evaluation of immune
+            response.
+REFERENCE   5  (bases 1 to 4560)
+  AUTHORS   Neumann HP, Eng C, Mulligan LM, Glavac D, Zauner I, Ponder BA,
+            Crossey PA, Maher ER and Brauch H.
+  TITLE     Consequences of direct genetic testing for germline mutations in the
+            clinical management of families with multiple endocrine neoplasia,
+            type II
+  JOURNAL   JAMA 274 (14), 1149-1151 (1995)
+   PUBMED   7563486
+REFERENCE   6  (bases 1 to 4560)
+  AUTHORS   Adams MD, Kerlavage AR, Fleischmann RD, Fuldner RA, Bult CJ, Lee NH,
+            Kirkness EF, Weinstock KG, Gocayne JD, White O et al.
+  TITLE     Initial assessment of human gene diversity and expression patterns
+            based upon 83 million nucleotides of cDNA sequence
+  JOURNAL   Nature 377 (6547 Suppl), 3-174 (1995)
+   PUBMED   7566098
+REFERENCE   7  (bases 1 to 4560)
+  AUTHORS   Duan DR, Humphrey JS, Chen DY, Weng Y, Sukegawa J, Lee S, Gnarra JR,
+            Linehan WM and Klausner RD.
+  TITLE     Characterization of the VHL tumor suppressor gene product:
+            localization, complex formation, and the effect of natural
+            inactivating mutations
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 92 (14), 6459-6463 (1995)
+   PUBMED   7604013
+REFERENCE   8  (bases 1 to 4560)
+  AUTHORS   Latif F, Tory K, Gnarra J, Yao M, Duh FM, Orcutt ML, Stackhouse T,
+            Kuzmin I, Modi W, Geil L et al.
+  TITLE     Identification of the von Hippel-Lindau disease tumor suppressor
+            gene
+  JOURNAL   Science 260 (5112), 1317-1320 (1993)
+   PUBMED   8493574
+REFERENCE   9  (bases 1 to 4560)
+  AUTHORS   van Leeuwaarde,R.S., Ahmad,S., Links,T.P. and Giles,R.H.
+  TITLE     Von Hippel-Lindau Syndrome
+  JOURNAL   (in) Adam MP, Ardinger HH, Pagon RA, Wallace SE, Bean LJH, Stephens
+            K and Amemiya A (Eds.); GENEREVIEWS((R)); (1993)
+   PUBMED   20301636
+REFERENCE   10  (bases 1 to 4560)
+  AUTHORS   Neumann HP and Wiestler OD.
+  TITLE     Clustering of features of von Hippel-Lindau syndrome: evidence for a
+            complex genetic locus
+  JOURNAL   Lancet 337 (8749), 1052-1054 (1991)
+   PUBMED   1673491
+  REMARK    Review article
+COMMENT     ##Evidence-Data-START##
+            Transcript exon combination :: L15409.1, SRR1803611.148663.1
+            [ECO:0000332]
+            RNAseq introns :: single sample supports all introns SAMEA1965299,
+            SAMEA1966682 [ECO:0000348]
+            ##Evidence-Data-END##
+            ##RefSeq-Attributes-START##
+            RefSeq Select criteria :: based on conservation, expression, longest
+            protein
+            ##RefSeq-Attributes-END##
+            REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AC034193.5, L15409.1,
+            AK315799.1, BC058831.1 and D58014.1.
+            This sequence is a reference standard in the RefSeqGene project.
+            [WARNING] On Nov 30, 2019 this sequence was replaced by
+            NM_000551.4.
+            On Jan 19, 2011 this sequence version replaced NM_000551.2.
+            Summary: Von Hippel-Lindau syndrome (VHL) is a dominantly inherited
+            familial cancer syndrome predisposing to a variety of malignant and
+            benign tumors. A germline mutation of this gene is the basis of
+            familial inheritance of VHL syndrome. The protein encoded by this
+            gene is a component of the protein complex that includes elongin B,
+            elongin C, and cullin-2, and possesses ubiquitin ligase E3
+            activity. This protein is involved in the ubiquitination and
+            degradation of hypoxia-inducible-factor (HIF), which is a
+            transcription factor that plays a central role in the regulation of
+            gene expression by oxygen. RNA polymerase II subunit POLR2G/RPB7 is
+            also reported to be a target of this protein. Alternatively spliced
+            transcript variants encoding distinct isoforms have been observed.
+            [provided by RefSeq, Jul 2008].
+            Transcript Variant: This variant (1) encodes the longest isoform
+            (1).
+            Sequence Note: This RefSeq record was created from transcript and
+            genomic sequence data to make the sequence consistent with the
+            reference genome assembly. The genomic coordinates used for the
+            transcript record were based on transcript alignments.
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            COMPLETENESS: complete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..4560
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="3"
+                     /map="3p25.3"
+     gene            1..4560
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /note="von Hippel-Lindau tumor suppressor"
+                     /db_xref="GeneID:7428"
+                     /db_xref="HGNC:HGNC:12687"
+                     /db_xref="MIM:608537"
+     exon            1..553
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             214..855
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /note="isoform 1 is encoded by transcript variant 1;
+                     elongin binding protein; von Hippel-Lindau disease tumor
+                     suppressor; protein G7; von Hippel-Lindau tumor suppressor,
+                     E3 ubiquitin protein ligase"
+                     /codon_start=1
+                     /product="von Hippel-Lindau disease tumor suppressor
+                     isoform 1"
+                     /protein_id="NP_000542.1"
+                     /db_xref="CCDS:CCDS2597.1"
+                     /db_xref="GeneID:7428"
+                     /db_xref="HGNC:HGNC:12687"
+                     /db_xref="MIM:608537"
+                     /translation="MPRRAENWDEAEVGAEEAGVEEYGPEEDGGEESGAEESGPEESGP
+                     EELGAEEEMEAGRPRPVLRSVNSREPSQVIFCNRSPRVVLPVWLNFDGEPQPYPTLPPG
+                     TGRRIHSYRGHLWLFRDAGTHDGLLVNQTELFVPSLNVDGQPIFANITLPVYTLKERCL
+                     QVVRSLVKPENYRRLDIVRSLYEDLEDHPNVQKDLERLTQERIAHQRMGD"
+     misc_feature    253..372
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="propagated from UniProtKB/Swiss-Prot (P40337.2);
+                     Region: 8 X 5 AA tandem repeats of G-[PAVG]-E-E-[DAYSLE]"
+     misc_feature    373..375
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /note="Region: alternative start codon"
+     misc_feature    511..678
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="propagated from UniProtKB/Swiss-Prot (P40337.2);
+                     Region: Involved in binding to CCT complex"
+     misc_feature    682..711
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="propagated from UniProtKB/Swiss-Prot (P40337.2);
+                     Region: Interaction with Elongin BC complex"
+     exon            554..676
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /inference="alignment:Splign:2.1.0"
+     exon            677..4560
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      4533..4538
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+     polyA_site      4557
+                     /gene="VHL"
+                     /gene_synonym="HRCA1; pVHL; RCA1; VHL1"
+                     /note="The 3'-most polyA site has not been determined. This
+                     is an internal polyA site."
+ORIGIN
+        1 cctcgcctcc gttacaacgg cctacggtgc tggaggatcc ttctgcgcac gcgcacagcc
+       61 tccggccggc tatttccgcg agcgcgttcc atcctctacc gagcgcgcgc gaagactacg
+      121 gaggtcgact cgggagcgcg cacgcagctc cgccccgcgt ccgacccgcg gatcccgcgg
+      181 cgtccggccc gggtggtctg gatcgcggag ggaatgcccc ggagggcgga gaactgggac
+      241 gaggccgagg taggcgcgga ggaggcaggc gtcgaagagt acggccctga agaagacggc
+      301 ggggaggagt cgggcgccga ggagtccggc ccggaagagt ccggcccgga ggaactgggc
+      361 gccgaggagg agatggaggc cgggcggccg cggcccgtgc tgcgctcggt gaactcgcgc
+      421 gagccctccc aggtcatctt ctgcaatcgc agtccgcgcg tcgtgctgcc cgtatggctc
+      481 aacttcgacg gcgagccgca gccctaccca acgctgccgc ctggcacggg ccgccgcatc
+      541 cacagctacc gaggtcacct ttggctcttc agagatgcag ggacacacga tgggcttctg
+      601 gttaaccaaa ctgaattatt tgtgccatct ctcaatgttg acggacagcc tatttttgcc
+      661 aatatcacac tgccagtgta tactctgaaa gagcgatgcc tccaggttgt ccggagccta
+      721 gtcaagcctg agaattacag gagactggac atcgtcaggt cgctctacga agatctggaa
+      781 gaccacccaa atgtgcagaa agacctggag cggctgacac aggagcgcat tgcacatcaa
+      841 cggatgggag attgaagatt tctgttgaaa cttacactgt ttcatctcag cttttgatgg
+      901 tactgatgag tcttgatcta gatacaggac tggttccttc cttagtttca aagtgtctca
+      961 ttctcagagt aaaataggca ccattgctta aaagaaagtt aactgacttc actaggcatt
+     1021 gtgatgttta ggggcaaaca tcacaaaatg taatttaatg cctgcccatt agagaagtat
+     1081 ttatcaggag aaggtggtgg catttttgct tcctagtaag tcaggacagc ttgtatgtaa
+     1141 ggaggtttgt ataagtaatt cagtgggaat tgcagcatat cgtttaattt taagaaggca
+     1201 ttggcatctg cttttaatgg atgtataata catccattct acatccgtag cggttggtga
+     1261 cttgtctgcc tcctgctttg ggaagactga ggcatccgtg aggcagggac aagtctttct
+     1321 cctctttgag accccagtgc ctgcacatca tgagccttca gtcagggttt gtcagaggaa
+     1381 caaaccaggg gacactttgt tagaaagtgc ttagaggttc tgcctctatt tttgttgggg
+     1441 ggtgggagag gggaccttaa aatgtgtaca gtgaacaaat gtcttaaagg gaatcatttt
+     1501 tgtaggaagc attttttata attttctaag tcgtgcactt tctcggtcca ctcttgttga
+     1561 agtgctgttt tattactgtt tctaaactag gattgacatt ctacagttgt gataatagca
+     1621 tttttgtaac ttgccatccg cacagaaaat acgagaaaat ctgcatgttt gattatagta
+     1681 ttaatggaca aataagtttt tgctaaatgt gagtatttct gttccttttt gtaaatatgt
+     1741 gacattcctg attgatttgg gtttttttgt tgttgttgtt ttgttttgtt ttgttttttt
+     1801 gagatggagt ctcactcttg tcacccaggc tggagtgcag tggcgccatc tcggctcact
+     1861 gcaacctctg cctcctgggt tcacgtaatc ctcctgagta gctgggatta caggcgcctg
+     1921 ccaccacgct ggccaatttt tgtactttta gtagagacag tgtttcgcca tgttggccag
+     1981 gctggtttca aactcctgac ctcaggtgat ccgcccacct cagcctccca aaatggtggg
+     2041 attacaggtg tgtgggccac cgtgcctggc tgattcagca ttttttatca ggcaggacca
+     2101 ggtggcactt ccacctccag cctctggtcc taccaatgga ttcatggagt agcctggact
+     2161 gtttcatagt tttctaaatg tacaaattct tataggctag acttagattc attaactcaa
+     2221 attcaatgct tctatcagac tcagtttttt gtaactaata gatttttttt tccacttttg
+     2281 ttctactcct tccctaatag ctttttaaaa aaatctcccc agtagagaaa catttggaaa
+     2341 agacagaaaa ctaaaaagga agaaaaaaga tccctattag atacacttct taaatacaat
+     2401 cacattaaca ttttgagcta tttccttcca gcctttttag ggcagatttt ggttggtttt
+     2461 tacatagttg agattgtact gttcatacag ttttataccc tttttcattt aactttataa
+     2521 cttaaatatt gctctatgtt agtataagct tttcacaaac attagtatag tctccctttt
+     2581 ataattaatg tttgtgggta tttcttggca tgcatcttta attccttatc ctagcctttg
+     2641 ggcacaattc ctgtgctcaa aaatgagagt gacggctggc atggtggctc ccgcctgtaa
+     2701 tcccagtact ttggaaagcc aaggtaagag gattgcttga gcccagaact tcaagatgag
+     2761 cctgggctca tagtgagaac ccatctatac aaaaaatttt taaaaattag catggcggca
+     2821 cacatctgta atcctagcta cttggcaggc tgaggtgaga agatcattgg agtttaggaa
+     2881 ttggaggctg cagtgagcca tgagtatgcc actgcactcc agcctggggg acagagcaag
+     2941 accctgcctc aaaaaaaaaa aaaaaaaaaa aatcaggccg ggcatggtgg ctcacgcctg
+     3001 taatcccagc actttgggag gtcgaggtgg gcagatcacc tgaggtcagg agttcgagac
+     3061 cagcctggcc aacatggtaa aaccccattt ctactaaaaa atacaagaat tagctgggtg
+     3121 tggtggcgca tgcctgtaat cctagctact caggaggctg aggcaggaga atcacttgaa
+     3181 cccaggaggc gaagattgca gtgagctgat atcgcaccat tgtactccag cctgtgtgac
+     3241 agagcaatac tcttgtctca aaaaaaaaaa aaaattcaaa tcagagtgaa gtgaatgaga
+     3301 cactccagtt ttccttctac tccgaatttc aactgatttt agctcctcct ttcaacattc
+     3361 aacaaatagt cttttttttt tttttttttt tttttttttt gagatggagt ctcactctgt
+     3421 tgcccaggct ggagtgcagt ggtgcgatct ctgctcacta caagctctgc ctcccgagtt
+     3481 caagtgattc tcctggctca ccctcctgag tagctgggat tacaggcgcc tgccaccatg
+     3541 cctggctaat tttgtgtttt tagtggagac ggggtttcac catgttgtcc aggatggtct
+     3601 tgatctcctg accttgtgat ccacccacct cagcctccca aagtgctggg attacaggtg
+     3661 tgagccaccg cgtccagcca gctttattat tttttttaag ctgtctttgt gtcaaaatga
+     3721 tagttcatgc tcctcttgtt aaaacctgca ggccgagcac agtggctcat gcctgtaatc
+     3781 ccagcatttt gggagaccaa ggcggatgga tcacctgagg tcaggagctg aagaccagcc
+     3841 tggctaacat ggtgaaacct catctccact taaaatacaa aaattgccgg ccgcggcggc
+     3901 tcatgcctgt aatcccagca ctttgggagg cctaggcggg tggatcacga ggtcaggaaa
+     3961 tcgagaccat cctggctaac acgggtgaaa ccccgtctct attaaaaaat agaaaaaatt
+     4021 aggcgggcgt ggtggtgagc gcctgtagtc ccagctactc gagagcctga ggcaggagaa
+     4081 tggcatgaac ctggaaggcg gagcttgcag tgagctgaga tggtgccact gcactctaac
+     4141 ctgggcgaca gagtgagaca ccgtctcaaa aaaaaaaaca aaaaacaaaa attatccagg
+     4201 tgtggcggtg ggcgcctgtg aggcaggcga atctcttgaa cccgggaggc ggaggttgca
+     4261 gtgagccaag atcacaccat tgcactccag cctgggcaac aagagtgaaa ttccatctca
+     4321 aaaagaaacc aaaaaaacaa aaaaaaaaca tgccgtttga gtactgtgtt tttggtgttg
+     4381 tccaaggaaa attaaaaacc tgtagcatga ataatgtttg tttttcattt cgaatcttgt
+     4441 gaatgtatta aatatatcgc tcttaagaga cggtgaagtt cctatttcaa gttttttttt
+     4501 tttttttttt ttttaaagct gttttttaat acattaaatg gtgctgagta aaggaaatag
+//

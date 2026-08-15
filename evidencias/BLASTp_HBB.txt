@@ -1,0 +1,18 @@
+BLASTp — HBB
+
+Query: HBB
+Length: 147 aa
+Database: Clustered NR
+
+Hit:
+beta-globina [Homo sapiens]
+
+Accession:
+AAA35597.1
+
+Max Score: 277
+Total Score: 277
+Query Coverage: 100%
+E-value: 2e-93
+Percent Identity: 93.20%
+Subject Length: 147 aa
